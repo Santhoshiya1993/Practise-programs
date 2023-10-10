@@ -1,3 +1,4 @@
+//find whether a given number is prime
 const prompt = require('prompt-sync')();
 let num=prompt("Enter the number to check whether its a prime number or not");
 let isPrime=true;
