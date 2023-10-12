@@ -24,3 +24,25 @@ if(isPrime)
         console.log(`${num} is a not prime number`);
     }
 }
+//list the prime numbers between a range from user
+
+const prompt = require('prompt-sync')();
+let lownum=parseInt(prompt("Enter the lower number"));
+let highnum=parseInt(prompt("Enter the higher number"));
+console.log(`The prime numbers between ${lownum} and ${highnum} are:`);
+for(let i=lownum;i<=highnum;i++)
+{
+    let flag=0;
+    for(let j=2;j<i;j++)
+    {
+        if(i%j==0)
+        {
+            flag=1;
+            break;
+        }
+    }
+    if(i>1 && flag==0)
+    {
+        console.log(i);
+    }
+} 
